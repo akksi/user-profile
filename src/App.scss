@@ -1,129 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body, h2 {
   font-family: 'Proxima Nova', sans-serif;
 }
 
-
-body,
-html {
-  height: 100%;
-}
-
-body {
+#root {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-}
 
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  width: 420px;
-  height: 450px;
-  border-radius: 8px;
-  border: solid 1px #9b9b9b;
-  background-color: #ffffff;
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 5px 25px 0;
-    height: 90px;
-    background-color: #efefef;
-    border-bottom: solid 1px #9b9b9b;
-
-    .profile-card-type {
-      margin: 0 0 0 10px;
-      font-size: 27px;
-      color: #4a4a4a;
-    }
-
-    .like-button {
-      font-size: 26px;
-      color: #979797;
-      margin: 0;
-      padding: 0;
-      background: 0;
-      border: 0;
-      outline: none;
-      cursor: pointer;
-    }
-  }
-
-  .personal-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    figure {
-      padding: 0;
-      margin: 0;
-
-      img {
-        width: 105px;
-        height: 105px;
-        border-radius: 50%;
-        border: solid 1px #9b9b9b;
-      }
-    }
-
-    h2 {
-      padding: 0;
-      margin: 5px 0;
-      font-size: 24px;
-      font-weight: 600;
-      color: #3e4d57;
-    }
-
-    .title,
-    address {
-      font-style: normal;
-      font-size: 17px;
-      color: #707070;
-    }
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    height: 90px;
-    padding: 14px 20px;
-    border-top: solid 1px #9b9b9b;
-    background-color: #fcfcfc;
-
-    &>div {
-      width: 25%;
-    }
-
-    .metric-name {
-      font-size: 14px;
-      line-height: 10px;
-      text-align: center;
-      color: #9f9f9f;
-    }
-
-    .metric-value {
-      font-size: 26px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      color: #4a4a4a;
-
-      &.rating {
-        line-height: 36px;
-        font-size: 14px;
-
-        .fa-star {
-          margin: 0 1px;
-        }
-      }
-    }
-  }
+  margin: 30px;
 }
