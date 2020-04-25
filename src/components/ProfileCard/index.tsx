@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './ProfileCard.scss';
+import './index.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart as fasFaHeart} from '@fortawesome/free-solid-svg-icons'
 import {faHeart as faFaHeart} from '@fortawesome/free-regular-svg-icons'
