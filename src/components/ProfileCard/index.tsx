@@ -8,15 +8,15 @@ import {IconDefinition} from "@fortawesome/fontawesome-common-types";
 import Rating from "../Rating";
 
 interface Props {
-	type: string,
-	profilePicture: string,
-	name: string,
-	title: string,
-	address: string,
-	profileViews: string,
-	websiteViews: string,
-	avgRating: number,
-	favorite: boolean
+	type: string;
+	profilePicture: string;
+	name: string;
+	title: string;
+	address: string;
+	profileViews: string;
+	websiteViews: string;
+	avgRating: number;
+	favorite: boolean;
 }
 
 const ProfileCard = (props: Props): JSX.Element => {
