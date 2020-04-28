@@ -7,7 +7,7 @@ import {IconDefinition} from "@fortawesome/fontawesome-common-types";
 
 import Rating from "../Rating";
 
-interface Props {
+type Props = {
 	type: string;
 	profilePicture: string;
 	name: string;

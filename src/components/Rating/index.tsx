@@ -3,8 +3,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faStar as fasFaStar} from '@fortawesome/free-solid-svg-icons'
 import {faStar as faFaStar} from '@fortawesome/free-regular-svg-icons'
 
-interface Props {
-	value: number
+type Props = {
+	value: number;
 }
 
 const Rating = ({value}: Props): JSX.Element => {
