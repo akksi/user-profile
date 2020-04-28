@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {Dispatch, FunctionComponent, SetStateAction, useState} from 'react';
 import './index.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart as fasFaHeart} from '@fortawesome/free-solid-svg-icons'
@@ -19,8 +19,13 @@ type Props = {
 	favorite: boolean;
 }
 
-const ProfileCard = (props: Props): JSX.Element => {
-	const [liked, setLiked] = useState<boolean>(props.favorite);
+type StateHook = [
+	boolean,
+	Dispatch<SetStateAction<boolean>>
+];
+
+const ProfileCard : FunctionComponent<Props> = (props: Props): JSX.Element => {
+	const [liked, setLiked] : StateHook = useState<boolean>(props.favorite);
 
 	const likeIcon: IconDefinition = liked ? fasFaHeart : faFaHeart;
 	const likeButtonClassName: string = liked ? 'filled' : 'empty';
