@@ -1,4 +1,4 @@
-import React, {Dispatch, FunctionComponent, SetStateAction, useState} from 'react';
+import React, {Dispatch, FunctionComponent, SetStateAction, useEffect, useState} from 'react';
 import './index.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart as fasFaHeart} from '@fortawesome/free-solid-svg-icons'
@@ -29,6 +29,15 @@ const ProfileCard : FunctionComponent<Props> = (props: Props): JSX.Element => {
 
 	const likeIcon: IconDefinition = liked ? fasFaHeart : faFaHeart;
 	const likeButtonClassName: string = liked ? 'filled' : 'empty';
+
+	useEffect(() => {
+		setTimeout(() => {
+			setLiked(true);
+		}, 3000);
+		return () => {
+			//console.log('Profile Card unmounted');
+		}
+	}, []);
 
 	return (
 		<div className="profile-card">
